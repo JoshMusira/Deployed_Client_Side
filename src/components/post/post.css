@@ -16,7 +16,7 @@
 .post:hover {
   background-color: aliceblue;
   border: 1px solid teal;
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .postImg {
@@ -74,7 +74,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .likeContainer {
