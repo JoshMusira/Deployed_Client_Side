@@ -1,0 +1,31 @@
+.footer-container {
+  background-color: teal;
+  margin-top: 45px;
+  height: 10vh;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  font-style: italic;
+  color: #eee;
+}
+.footer-container .icons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.footer-container span {
+  color: #111;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

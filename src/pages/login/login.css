@@ -1,0 +1,79 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(123, 116, 116, 0.3),
+      rgba(152, 146, 146, 0.3)
+    ),
+    url("../../assets/images/blog02.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.loginTitle {
+  font-size: 60px;
+  color: white;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 5px;
+}
+.loginForm > label {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.loginInput {
+  padding: 15px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+.loginButton:hover {
+  color: teal;
+  background-color: white;
+  cursor: pointer;
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  font-size: 35px;
+  right: 20px;
+  background-color: teal;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}

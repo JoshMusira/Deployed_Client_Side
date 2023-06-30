@@ -1,0 +1,290 @@
+/* h2 tag */
+h2 {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #0e1133;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title h2 {
+  padding-left: 10px;
+  color: teal;
+}
+/* row with direct contact boxes */
+.contact-box {
+  display: flex;
+  /* float: left; */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.card {
+  width: 30%;
+  border: none;
+}
+
+/* CSS for each column in contact row */
+.contact-col {
+  height: 150px;
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.TopContainer {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  height: 20vh;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 1000px) {
+  .masterContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* height: 115vh; */
+  }
+  .TopContainer {
+    display: grid;
+    z-index: 0;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .FormContainer form {
+    height: auto;
+  }
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+}
+.FormContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+
+  justify-content: center;
+  background-color: #efdcec;
+  border-radius: 8px;
+  /* border: 1px solid gray; */
+  gap: 10px;
+  width: 50vw;
+  height: 50vh;
+  /* justify-content: center; */
+}
+.FormContainer form span {
+  font-size: 35px;
+  padding-top: 30px;
+  font-weight: bold;
+  /* font-family: sans-serif; */
+  letter-spacing: 0.5px;
+  color: whitesmoke;
+  text-shadow: 0px 4px 4px #5f0221;
+}
+.first-letter {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.FormContainer form input {
+  border: 1px solid gray;
+  /* padding: 5px; */
+  width: 40vw;
+  height: 5vh;
+  border-radius: 5px;
+}
+.FormContainer form textarea {
+  border-radius: 5px;
+  height: 10vh;
+  width: 40vw;
+}
+.FormContainer form button {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+  /* box-sizing: content-box; */
+  /* border: 1px solid gray */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.FormContainer form button:hover {
+  cursor: pointer;
+}
+.FormContainer form button::before {
+  position: absolute;
+  content: "";
+  background-color: #daafbd;
+  inset: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  /* border-radius: 8px; */
+  transform-origin: bottom;
+  transition: all 0.8s ease-in-out;
+}
+
+.FormContainer form button:hover::before {
+  transform: scaleY(1);
+
+  cursor: pointer;
+}
+.containerComponent {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  z-index: 1;
+  width: 17vw;
+  padding: 10px;
+  height: 20vh;
+  overflow-x: auto;
+  box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 1s ease-in-out;
+  /* transform: scale(0.9); */
+}
+.containerComponent:hover {
+  transform: scale(1.1);
+}
+.containerComponent span {
+  padding-top: 3px;
+
+  padding-bottom: 3px;
+  font-size: 35px;
+  color: teal;
+}
+.containerComponent span:hover {
+  cursor: pointer;
+}
+.containerComponent h4 {
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: teal;
+  font-weight: 300;
+  font-size: 17px;
+}
+.containerComponent p {
+  color: black;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1000px) {
+  .containerComponent {
+    width: 20vw;
+  }
+  .containerComponent h4 {
+    font-size: 12px;
+  }
+  .FormContainer form {
+    margin-top: 35%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .masterContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerComponent {
+    width: 50%;
+  }
+  .TopContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/* CSS for font awsome*/
+.fa {
+  font-size: 28px !important;
+  color: #0e1133 !important;
+}
+
+.fa:hover {
+  font-size: 38px !important;
+  color: white !important;
+}
+
+/* css for buttons */
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #0e1133 !important;
+}
+
+/* clearing float left property*/
+.clear-float {
+  clear: both;
+  margin-bottom: 40px;
+}
+
+/* CSS for address text */
+.address-section {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* css for map section*/
+.map-section {
+  width: 100%;
+  height: 325px;
+  border: 0;
+}
+
+/* CSS for address heading */
+.address-heading {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0e1133;
+}
+
+/* blog */
+.card-blog {
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+}
+
+.card-blog:hover {
+  transform: scale(1.05);
+}
+
+/* css for removing padding from row class */
+.row-div > * {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* css to change link colors */
+a {
+  color: #0e1133;
+  background-color: transparent;
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.Link {
+  text-decoration: none;
+  color: inherit;
+}
+.postBottomLeft {
+  width: 100%;
+}
+.likeIcon {
+  width: 25px;
+  /* background-color: teal; */
+  font-size: 10px;
+  cursor: pointer;
+}
+.postLikeCounter {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.delete {
+  padding-top: 10px;
+}
