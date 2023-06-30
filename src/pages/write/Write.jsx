@@ -59,7 +59,7 @@ const Write = () => {
         };
         console.log(data)
 
-        Axios.post("http://localhost:8081/post", data, {
+        Axios.post(`${apiDomain}/post`, data, {
             headers: { 'Authorization': `${user.token}` }
         })
             .then((response) => {

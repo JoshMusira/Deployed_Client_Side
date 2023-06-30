@@ -8,7 +8,7 @@ import Axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { Context } from '../../context/userContext/Context'
-
+import { apiDomain } from '../../utils/utilsDomain'
 const Login = () => {
     const { dispatch } = useContext(Context);
     // console.log(user);
@@ -23,7 +23,7 @@ const Login = () => {
     })
 
     const onSubmit = (data) => {
-        Axios.post("http://localhost:8081/auth/login", data)
+        Axios.post(`${apiDomain}/auth/login`, data)
             .then(({ data }) => {
                 if (data.token) {
                     dispatch({ type: "LOGIN_SUCCESS", payload: data })

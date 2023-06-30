@@ -10,6 +10,7 @@ import { useState } from "react";
 import { storage } from "../../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 } from 'uuid';
+import { apiDomain } from '../../utils/utilsDomain';
 
 export default function Register() {
     const navigate = useNavigate();
@@ -76,7 +77,7 @@ export default function Register() {
         };
         console.log(data)
 
-        Axios.post("http://localhost:8081/auth/register", data)
+        Axios.post(`${apiDomain}/auth/register`, data)
             .then((response) => {
                 response.data.message && alert(response.data.message);
                 navigate("/login");
