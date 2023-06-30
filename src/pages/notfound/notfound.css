@@ -1,0 +1,6 @@
+#background-video {
+  background-image: url("../../assets/404-error.png");
+}
+#background-video h1 {
+  color: red;
+}

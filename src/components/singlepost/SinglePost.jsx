@@ -74,10 +74,11 @@ const SinglePost = () => {
         <>
             {blogs && (
                 <div className="post">
-                    {
-                        blogs.image_URL ? <img className="postImg" src={blogs.image_URL} alt="" /> : <img className="postImg" src={post1} alt="" />
-                    }
-
+                    <div className="imageContainer1">
+                        {
+                            blogs.image_URL ? <img className="postImg" src={blogs.image_URL} style={{ width: '100%' }} alt="" /> : <img style={{ width: '100%' }} className="postImg" src={post1} alt="" />
+                        }
+                    </div>
                     <div className="postInfo">
                         <div className="postCats">
                             <span className="postCat">{blogs.category_name}</span>

@@ -13,6 +13,7 @@ import { useContext } from 'react'
 import { Context } from './context/userContext/Context'
 import Footer from './components/footer/Footer'
 import Update from './pages/update/Update'
+import PageNotFound from './pages/notfound/PageNotFound'
 
 function App() {
   const { user } = useContext(Context)
@@ -31,6 +32,7 @@ function App() {
         <Route path='/post/:id' element={user ? <Single /> : <Login />} />
         <Route path='/update/:id' element={<Update />} />
         <Route path='/about' element={<About />} />
+        <Route path='*' element={<PageNotFound />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
