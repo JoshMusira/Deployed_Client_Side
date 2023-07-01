@@ -3,10 +3,5 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: -200px 20px 0 20px;
+  /* margin: -200px 20px 0 20px; */
 }
-/* @media screen and (max-width: 1200px) {
-  .posts {
-    flex: 7;
-  }
-} */

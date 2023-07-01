@@ -39,11 +39,7 @@ const Login = () => {
     }
     return (
         <div className='login'>
-            {/* <div id="background-video">
-                <video autoPlay loop muted >
-                    <source src="../../assets/Firebase.webm" type='video/webm' />
-                </video>
-            </div> */}
+
             <span className="loginTitle">Login</span>
             <form onSubmit={handleSubmit(onSubmit)} className="loginForm">
                 <label> Username</label>

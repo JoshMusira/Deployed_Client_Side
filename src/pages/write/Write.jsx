@@ -36,7 +36,7 @@ const Write = () => {
                 getDownloadURL(imageRef)
                     .then((url) => {
                         saveDataToDatabase(url);
-                        console.log(url)// Save the image URL and other data to the database
+                        // console.log(url)// Save the image URL and other data to the database
                     })
                     .catch((error) => {
                         console.log("Error retrieving image URL:", error);
@@ -57,7 +57,7 @@ const Write = () => {
             category_name: formData.get("category_name"),
             user_id: user.id,
         };
-        console.log(data)
+        // console.log(data)
 
         Axios.post(`${apiDomain}/post`, data, {
             headers: { 'Authorization': `${user.token}` }
@@ -72,7 +72,7 @@ const Write = () => {
     };
 
     const onSubmit = (formData) => {
-        console.log(formData);
+        // console.log(formData);
         uploadImage();
     };
 
